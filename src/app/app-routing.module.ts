@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+<<<<<<< HEAD
 // admin coponents
 import { AdminPageComponent } from './admin_panal/admin-page/admin-page.component';
 import { CategoriesComponent } from './admin_panal/categories/categories.component';
@@ -39,6 +40,16 @@ const routes: Routes = [
   }
 
 
+=======
+import { LoginandregistrationComponent } from './components/loginandregistration/loginandregistration.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { LandingpageComponent } from './components/landingpage/landingpage.component';
+const routes: Routes = [
+  { path: '', component: LoginandregistrationComponent },
+  { path: 'login', component: LoginandregistrationComponent },
+  { path: 'dashboard', component: LandingpageComponent },
+  { path: '**', component: PagenotfoundComponent },
+>>>>>>> 71dec2ea3717656a01cfd2802b378920226eb6a9
 ];
 
 @NgModule({
